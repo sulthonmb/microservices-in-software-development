@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker run -d --rm --name konga \
+--network=kong-net \
+-p 1337:1337 \
+-e "TOKEN_SECRET=km1GUr4RkcQD7DewhJPNXrCuZwcKmqjb" \
+-e "KONGA_HOOK_TIMEOUT=120000" \
+-e "NODE_ENV=development" \
+pantsel/konga

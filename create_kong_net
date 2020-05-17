@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker network create kong-net
+
+
+
+
+
